@@ -52,6 +52,14 @@ const projectData=[
   link: '',
   github: 'https://github.com/raymondkings/face_recognition'
 },
+{
+  image: '/work/7.png',
+  category: 'Front End',
+  name:'Netflix Front End Clone',
+  description: 'developed using JavaScript Framework Vue.js, styled with CSS Framework Tailwind CSS',
+  link: 'https://raymond-netflix-clone.netlify.app',
+  github: 'https://github.com/raymondkings/raymond-netflix-clone'
+},
 ];
 
 //remove category duplicates
