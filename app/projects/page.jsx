@@ -57,7 +57,7 @@ const projectData=[
   category: 'Front End',
   name:'Netflix Front End Clone',
   description: 'developed using JavaScript Framework Vue.js, styled with CSS Framework Tailwind CSS',
-  link: 'https://raymond-netflix-clone.netlify.app',
+  link: 'https://raymond-netflix-clone.vercel.app',
   github: 'https://github.com/raymondkings/raymond-netflix-clone'
 },
 ];
