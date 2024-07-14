@@ -37,7 +37,7 @@ const Hero = () => {
                 <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">Student</div>
                 <h1 className="h1 mb-4">Hello, my name is Raymond King</h1>
                 <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-                    I am a Computer Science Student at TUM
+                    I am a Computer Science undergraduate Student at TUM
                     </p>
                     {/* buttons */}
                     <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">

@@ -63,6 +63,11 @@ const qualificationData = [
         title: 'experience',
         data: [
             {
+                company: 'Agile Robots',
+                role: 'Front End Software Engineer',
+                years: '05.2024 - today',
+            },
+            {
                 company: 'Purino GmBH',
                 role: 'Cook',
                 years: '04.2022 - 09.2022',
@@ -84,7 +89,7 @@ const skillData = [
                 name: 'HTML, CSS (Front-end Development)',
             },
             {
-                name: 'Javascript, Google App Script',
+                name: 'Javascript, Google App Script, Typescript',
             },
             {
                 name: 'Flutter , SQL , Java , C',
