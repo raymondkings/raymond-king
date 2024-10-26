@@ -60,6 +60,14 @@ const projectData=[
   link: 'https://raymond-netflix-clone.vercel.app',
   github: 'https://github.com/raymondkings/raymond-netflix-clone'
 },
+    {
+        image: '/work/8.png',
+        category: 'Front End',
+        name: 'TripTracker',
+        description: 'IOS App that allows you to plan your trip and activities, built with SwiftUI',
+        link:'',
+        github: '',
+    }
 ];
 
 //remove category duplicates
@@ -68,7 +76,7 @@ const uniqueCategories = [
   ...new Set(projectData.map((item) => item.category))]
 
 const Projects = () => {
-  const [categories, setCategories] = useState(uniqueCategories);
+  const [categories] = useState(uniqueCategories);
   const [category, setCategory] = useState('all projects');
   
   const filteredProjects = projectData.filter((project) => {
