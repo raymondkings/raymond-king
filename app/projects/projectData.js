@@ -15,7 +15,9 @@ Built with:
 
 Ideal for events, team attendance tracking, and small organizations.`,
         link: '',
-        github: ''
+        github: '',
+        skills: ['Next.js', 'Supabase', 'Google Sheets', 'QR Code', 'Google Calendar']
+
     },
     {
         slug: 'todo-list-app',
@@ -29,7 +31,8 @@ Ideal for events, team attendance tracking, and small organizations.`,
 
 Features basic CRUD and filtering.`,
         link: '',
-        github: 'https://github.com/raymondkings/new-todolist-app/'
+        github: 'https://github.com/raymondkings/new-todolist-app/',
+        skills: [],
     },
     {
         slug: 'car-rental-site',
@@ -43,7 +46,8 @@ Built with:
 - HTML, CSS, JavaScript
 - Focus on responsive layout and visual appeal`,
         link: 'https://rnbtrans.netlify.app',
-        github: 'https://github.com/raymondkings/RnB_Trans'
+        github: 'https://github.com/raymondkings/RnB_Trans',
+        skills: [],
     },
     {
         slug: 'mori-money-manager',
@@ -57,7 +61,8 @@ Built with:
 - Built with **Flutter**
 - Expense tracking and budgeting features.`,
         link: '',
-        github: ''
+        github: '',
+        skills: [],
     },
     {
         slug: 'crc32-checksum-c',
@@ -71,7 +76,8 @@ Built with:
 - Includes unit testing and benchmarking
 - Useful for verifying data integrity`,
         link: '',
-        github: ''
+        github: '',
+        skills: [],
     },
     {
         slug: 'face-recognition-opencv',
@@ -85,7 +91,8 @@ Built with:
 - Basic face detection and labeling
 - Simple UI with CLI`,
         link: '',
-        github: 'https://github.com/raymondkings/face_recognition'
+        github: 'https://github.com/raymondkings/face_recognition',
+        skills: [],
     },
     {
         slug: 'netflix-clone',
@@ -100,7 +107,8 @@ Built with:
 
 Includes responsive layout and scrollable sections.`,
         link: 'https://raymond-netflix-clone.vercel.app',
-        github: 'https://github.com/raymondkings/raymond-netflix-clone'
+        github: 'https://github.com/raymondkings/raymond-netflix-clone',
+        skills: [],
     },
     {
         slug: 'triptracker-ios',
@@ -114,6 +122,7 @@ Built using:
 - **SwiftUI**
 - Lets users plan trips and activities`,
         link: '',
-        github: ''
+        github: '',
+        skills: [],
     }
 ];

@@ -17,23 +17,36 @@ export default function ProjectDetail({ params }) {
     if (!project) return notFound();
 
     return (
-        <section className="py-12 min-h-screen">
+        <section className="py-16 min-h-screen">
             <div className="container mx-auto px-4">
-                <h1 className="text-3xl font-bold mb-6">{project.name}</h1>
+                {/* Title */}
+                <h1 className="text-4xl font-bold mb-4">{project.name}</h1>
 
-                {/* Swiper Container with padding for arrows */}
-                <div className="relative px-12">
-                    {/* Left Arrow - positioned outside the image area */}
+                {/* Skills / Chips */}
+                {project.skills && (
+                    <div className="flex flex-wrap gap-2 mb-8">
+                        {project.skills.map((skill, index) => (
+                            <span
+                                key={index}
+                                className="px-4 py-1 text-sm bg-muted text-muted-foreground rounded-full hover:scale-105 transition-transform"
+                            >
+                {skill}
+              </span>
+                        ))}
+                    </div>
+                )}
+
+                {/* Swiper Image Gallery */}
+                <div className="relative px-12 mb-8">
+                    {/* Arrows */}
                     <div className="hidden md:flex items-center absolute left-0 top-1/2 -translate-y-1/2 z-10 text-gray-400 hover:text-gray-600 cursor-pointer">
-                        <ChevronLeft size={50} className="swiper-button-prev" />
+                        <ChevronLeft size={40} className="swiper-button-prev" />
                     </div>
-
-                    {/* Right Arrow */}
                     <div className="hidden md:flex items-center absolute right-0 top-1/2 -translate-y-1/2 z-10 text-gray-400 hover:text-gray-600 cursor-pointer">
-                        <ChevronRight size={50} className="swiper-button-next" />
+                        <ChevronRight size={40} className="swiper-button-next" />
                     </div>
 
-                    {/* Swiper with adjusted margin */}
+                    {/* Swiper */}
                     <Swiper
                         modules={[Pagination, Navigation]}
                         pagination={{ clickable: true }}
@@ -48,7 +61,6 @@ export default function ProjectDetail({ params }) {
                             768: { slidesPerView: 1.5 },
                             1024: { slidesPerView: 2 },
                         }}
-                        className="mb-8"
                     >
                         {project.image.map((src, index) => (
                             <SwiperSlide key={index}>
@@ -72,7 +84,7 @@ export default function ProjectDetail({ params }) {
                 </div>
 
                 {/* Buttons */}
-                <div className="mt-8 flex gap-4">
+                <div className="mt-10 flex gap-4">
                     {project.link && (
                         <a
                             href={project.link}
