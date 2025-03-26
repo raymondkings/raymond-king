@@ -2,7 +2,7 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
-    User2, MailIcon, HomeIcon, PhoneCall, GraduationCap, Calendar, Briefcase, Phone
+    User2, MailIcon, HomeIcon, GraduationCap, Calendar, Briefcase
 } from 'lucide-react';
 
 const infoData = [
@@ -93,7 +93,6 @@ const About = () => {
                         {/* Qualifications */}
                         <TabsContent value="qualifications">
                             <div>
-                                <h3 className="h3 mb-8 text-center xl:text-left">My Awesome Journey</h3>
                                 <div className='grid md:grid-cols-2 gap-y-8'>
 
                                     {/* Experience */}
@@ -146,15 +145,16 @@ const About = () => {
                         {/* Skills */}
                         <TabsContent value="skills">
                             <div className="text-center xl:text-left">
-                                <h3 className="h3 mb-8">Tools I Am Familiar With</h3>
                                 <div className="mb-16">
-                                    <h4 className="text-xl font-semibold mb-2">Skills</h4>
-                                    <div className="border-b border-border mb-4"></div>
-                                    <div>
+                                    <h4 className="text-xl font-semibold mb-4">Skills</h4>
+                                    <div className="flex flex-wrap gap-3">
                                         {getData(skillData, 'skills').data.map((item, index) => (
-                                            <div className="w-2/4 text-center xl:text-left mx-auto xl:mx-0" key={index}>
-                                                <div className="font-medium">{item.name}</div>
-                                            </div>
+                                            <span
+                                                key={index}
+                                                className="px-4 py-1 text-sm bg-muted text-muted-foreground rounded-full hover:scale-105 transition-transform"
+                                            >
+                        {item.name}
+                      </span>
                                         ))}
                                     </div>
                                 </div>
