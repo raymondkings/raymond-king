@@ -14,6 +14,7 @@ import {
 import DevImg from "./DevImg";
 import Badge from "./Badge";
 import Socials from "./Socials";
+import Image from "next/image";
 
 
 const Hero = () => { 
@@ -57,11 +58,9 @@ const Hero = () => {
                     transition-all'/>
             </div>
             {/* image */}
-            <div className="hidden xl:flex relative ">
-                <div className="bg-hero_shape2_light dark: bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
-                <DevImg containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
-                imgSrc={'/hero/developer.png'}
-                />
+            <div className="hidden xl:flex relative">
+                <div className="w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
+                <Image src="/hero/developer-1.png" width={500} height={500}/>
             </div>
         </div>
         {/* icon */}
