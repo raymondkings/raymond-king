@@ -4,7 +4,7 @@ export const projectData = [
         image: ['/work/4.png', '/work/6.png', '/work/1.png', '/work/5.png', '/work/3.png'],
         category: 'Full Stack',
         name: 'Web based QR-Code Attendance System',
-        description: 'The system remains actively used in an organisation with around 80 members...',
+        description: 'The system is actively used by KMKI Bayern.',
         longDescription: `This system is actively used in an organization with ~80 members.
 
 Built with:

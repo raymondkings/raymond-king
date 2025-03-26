@@ -34,8 +34,9 @@ const Hero = () => {
         <div className='flex justify-between gap-x-8'>
             {/* text */}
             <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
-                <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">Student</div>
-                <h1 className="h1 mb-4">Hello, my name is Raymond King</h1>
+                <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">Student, Software Engineer</div>
+                <h1 className="h1 mb-4">Hi, I'm</h1>
+                <h1 className="h1 mb-4">Raymond King</h1>
                 <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
                     I am a Computer Science undergraduate Student at TUM
                     </p>
