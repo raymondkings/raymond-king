@@ -1,6 +1,13 @@
+'use client';
+
 import { projectData } from '../projectData';
-import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 export default function ProjectDetail({ params }) {
     const project = projectData.find((p) => p.slug === params.slug);
@@ -12,20 +19,37 @@ export default function ProjectDetail({ params }) {
             <div className="container mx-auto px-4">
                 <h1 className="text-3xl font-bold mb-6">{project.name}</h1>
 
-                {/* Scrollable Image Gallery */}
-                <div className="flex overflow-x-auto space-x-4 mb-8 pb-2">
+                {/* Scrollable Image Gallery with Swiper */}
+                <Swiper
+                    modules={[Pagination]}
+                    pagination={{ clickable: true }}
+                    loop={true}
+                    className="mb-8"
+                    spaceBetween={20}
+                    slidesPerView={1.1}
+                    breakpoints={{
+                        768: {
+                            slidesPerView: 1.5,
+                        },
+                        1024: {
+                            slidesPerView: 2,
+                        },
+                    }}
+                >
                     {project.image.map((src, index) => (
-                        <div key={index} className="min-w-[300px]">
-                            <Image
-                                src={src}
-                                alt={`Screenshot ${index + 1}`}
-                                width={600}
-                                height={400}
-                                className="rounded-xl shadow-md"
-                            />
-                        </div>
+                        <SwiperSlide key={index}>
+                            <div className="min-w-[300px]">
+                                <Image
+                                    src={src}
+                                    alt={`Screenshot ${index + 1}`}
+                                    width={600}
+                                    height={400}
+                                    className="rounded-xl shadow-md"
+                                />
+                            </div>
+                        </SwiperSlide>
                     ))}
-                </div>
+                </Swiper>
 
                 {/* Description */}
                 <div className="prose max-w-3xl dark:prose-invert">
@@ -55,7 +79,6 @@ export default function ProjectDetail({ params }) {
                         </a>
                     )}
                 </div>
-
             </div>
         </section>
     );

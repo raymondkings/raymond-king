@@ -1,7 +1,7 @@
 export const projectData = [
     {
         slug: 'qr-attendance',
-        image: ['/work/4.png'],
+        image: ['/work/4.png', '/work/6.png', '/work/1.png', '/work/5.png', '/work/3.png'],
         category: 'Full Stack',
         name: 'Web based QR-Code Attendance System',
         description: 'The system remains actively used in an organisation with around 80 members...',
