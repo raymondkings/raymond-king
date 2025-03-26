@@ -15,7 +15,7 @@ const ProjectCard = ({ project }) => {
             xl:bg-no-repeat overflow-hidden'>
                         <Image
                             className='absolute bottom-0 shadow-2xl'
-                            src={project.image}
+                            src={project.image[0]}
                             width={247}
                             height={250}
                             alt={project.name}

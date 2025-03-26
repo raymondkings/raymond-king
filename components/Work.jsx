@@ -14,60 +14,7 @@ import {Pagination} from 'swiper/modules';
 
 //components
 import ProjectCard from '@/components/ProjectCard';
-
-
-const projectData=[
-    {
-        image: '/work/4.png',
-        category: 'Full Stack',
-        name:'Web based QR-Code Attendance System',
-        description: 'The system remains actively used in an organisation with around 80 members.built with Next.js for frontend scanning, seamlessly integrated with Google Forms for data collection, Google Sheets and Supabase for data management, and connected to users` calendars for event invitations ',
-        link: '',
-        github: '' 
-    },
-    {
-        image: '/work/6.png',
-        category: 'Full Stack',
-        name:'Web based Todo List App',
-        description: 'Simple yet useful todolist app, built with React.js, css, and uses Postgressql',
-        link: '',
-        github: 'https://github.com/raymondkings/new-todolist-app/'
-    },
-    {
-        image: '/work/1.png',
-        category: 'Front End',
-        name:'Car Rental Website',
-        description: 'Landing Page for car rental business based in Semarang, Indonesia, built with html,css, and javascript',
-        link: 'https://rnbtrans.netlify.app',
-        github: 'https://github.com/raymondkings/RnB_Trans'
-    },
-    {
-      image: '/work/5.png',
-      category: 'Full Stack',
-      name:'Mori : Money Manager',
-      description: '(Currently in development) Money Manager App for IOS and Android, built with Flutter',
-      link: '',
-      github: ''
-  },
-  {
-    image: '/work/2.png',
-    category: 'Others',
-    name:'CRC32 (Language : C)',
-    description: 'CRC32 is an error-detecting code algorithm that generates a 32-bit checksum for verifying data integrity, optimized with SIMD, developed also with testing, benchmark test, and help method',
-    link: '',
-    github: ''
-  },
-  {
-    image: '/work/3.png',
-    category: 'Others',
-    name:'Face Recognition System',
-    description: "developed using Python and leveraging the powerful capabilities of OpenCV's open-source library.",
-    link: '',
-    github: 'https://github.com/raymondkings/face_recognition'
-  },
-  ];
-  
-  
+import {projectData} from "@/app/projects/projectData";
 
 const Work = () => {
   return (
