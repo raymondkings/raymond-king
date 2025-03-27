@@ -21,7 +21,7 @@ Ideal for events, team attendance tracking, and small organizations.`,
     },
     {
         slug: 'todo-list-app',
-        image: ['/work/6.png'],
+        image: ['/work/todo-list-app/1.png','/work/todo-list-app/2.png','/work/todo-list-app/3.png','/work/todo-list-app/4.png'],
         category: 'Full Stack',
         name: 'Web based Todo List App',
         description: 'Simple yet useful todolist app, built with React.js, CSS, and PostgreSQL.',
