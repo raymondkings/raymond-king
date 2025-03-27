@@ -36,7 +36,7 @@ Features basic CRUD and filtering.`,
     },
     {
         slug: 'car-rental-site',
-        image: ['/work/1.png'],
+        image: ['/work/car-rental-site/1.png','/work/car-rental-site/2.png'],
         category: 'Front End',
         name: 'Car Rental Website',
         description: 'Landing Page for car rental business built with HTML, CSS, and JavaScript.',
