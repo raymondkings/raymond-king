@@ -8,17 +8,12 @@ const ProjectCard = ({ project }) => {
         <Link href={`/projects/${project.slug}`}>
             <Card className='group overflow-hidden relative rounded-[35px] cursor-pointer hover:shadow-lg transition'>
                 <CardHeader className='p-0'>
-                    {/* Image section */}
-                    <div className='relative w-full h-[300px] flex items-center justify-center
-            bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light
-            xl:dark:bg-work_project_bg_dark xl:bg-[110%]
-            xl:bg-no-repeat overflow-hidden'>
+                    <div className="relative w-full h-[300px] bg-muted rounded-t-[35px] overflow-hidden flex items-center justify-center">
                         <Image
-                            className='absolute bottom-0 shadow-2xl'
                             src={project.image[0]}
-                            width={247}
-                            height={250}
                             alt={project.name}
+                            fill
+                            className="object-contain"
                             priority
                         />
                     </div>
