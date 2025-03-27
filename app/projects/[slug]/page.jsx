@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { RiGithubFill, RiLinksLine } from 'react-icons/ri';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -19,8 +20,32 @@ export default function ProjectDetail({ params }) {
     return (
         <section className="py-16 min-h-screen">
             <div className="container mx-auto px-4">
-                {/* Title */}
-                <h1 className="text-4xl font-bold mb-4">{project.name}</h1>
+                {/* Title & Icons */}
+                <div className="flex items-center gap-3 mb-4">
+                    <h1 className="text-4xl font-bold">{project.name}</h1>
+
+                    {project.github && (
+                        <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-muted-foreground hover:text-foreground transition"
+                        >
+                            <RiGithubFill size={28} />
+                        </a>
+                    )}
+                    {project.link && (
+                        <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-muted-foreground hover:text-foreground transition"
+                        >
+                            <RiLinksLine size={24} />
+                        </a>
+                    )}
+                </div>
+
 
                 {/* Skills / Chips */}
                 {project.skills && (
@@ -78,32 +103,8 @@ export default function ProjectDetail({ params }) {
                 </div>
 
                 {/* Description */}
-                <div className="prose max-w-3xl dark:prose-invert">
+                <div className="prose dark:prose-invert">
                     <p>{project.longDescription}</p>
-                </div>
-
-                {/* Buttons */}
-                <div className="mt-10 flex gap-4">
-                    {project.link && (
-                        <a
-                            href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn"
-                        >
-                            Live Demo
-                        </a>
-                    )}
-                    {project.github && (
-                        <a
-                            href={project.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn"
-                        >
-                            GitHub
-                        </a>
-                    )}
                 </div>
             </div>
         </section>
