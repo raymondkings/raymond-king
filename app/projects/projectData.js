@@ -1,7 +1,7 @@
 export const projectData = [
     {
         slug: 'qr-attendance',
-        image: ['/work/4.png', '/work/6.png', '/work/1.png', '/work/5.png', '/work/3.png'],
+        image: ['/work/qr-attendance/1.png', '/work/qr-attendance/2.png', '/work/qr-attendance/3.png', '/work/qr-attendance/4.png', '/work/qr-attendance/5.png', '/work/qr-attendance/6.png', '/work/qr-attendance/7.png'],
         category: 'Full Stack',
         name: 'Web based QR-Code Attendance System',
         description: 'The system is actively used by KMKI Bayern.',

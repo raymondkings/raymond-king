@@ -64,13 +64,12 @@ export default function ProjectDetail({ params }) {
                     >
                         {project.image.map((src, index) => (
                             <SwiperSlide key={index}>
-                                <div className="min-w-[300px]">
+                                <div className="w-full h-[300px] md:h-[400px] xl:h-[500px] bg-muted relative rounded-xl overflow-hidden flex items-center justify-center">
                                     <Image
                                         src={src}
                                         alt={`Screenshot ${index + 1}`}
-                                        width={600}
-                                        height={400}
-                                        className="rounded-xl shadow-md"
+                                        fill
+                                        className="object-contain"
                                     />
                                 </div>
                             </SwiperSlide>
