@@ -51,7 +51,7 @@ Built with:
     },
     {
         slug: 'mori-money-manager',
-        image: ['/work/5.png'],
+        image: ['/work/mori-money-manager/1.png','/work/mori-money-manager/2.png','/work/mori-money-manager/3.png','/work/mori-money-manager/4.png','/work/mori-money-manager/5.png'],
         category: 'Full Stack',
         name: 'Mori : Money Manager',
         description: 'Money Manager App for iOS and Android, built with Flutter.',
