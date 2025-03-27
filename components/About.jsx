@@ -25,9 +25,10 @@ const qualificationData = [
     {
         title: 'experience',
         data: [
-            { company: 'Agile Robots', role: 'Front End Software Engineer', years: '05.2024 - today' },
-            { company: 'Purino GmBH', role: 'Cook', years: '04.2022 - 09.2022' },
-            { company: 'Michelin Tyres Company', role: 'Production Staff', years: '07.2021 - 09.2021' },
+            { company: 'IPraktikum with SchwarzIT, TUM', role: 'Computer Vision and Mixed Reality Engineer', skills:' 3D-Visualization on VisionOS , YOLOv11, CoreML, SwiftUI (ARKit, RealityKit, Raycasting), Python, Dataset Creation', years: '05.2024 - 11.2024' },
+            { company: 'Agile Robots', role: 'Front End Software Engineer', skills:'Vue JS, HTML, SCSS, GraphQl, JIRA', years: '10.2024 - 02.2025' },
+            { company: 'Purino GmBH', role: 'Cook', skills:'', years: '04.2022 - 09.2022' },
+            { company: 'Michelin Tyres Company', role: 'Production Staff', skills:'', years: '07.2021 - 09.2021' },
         ]
     }
 ];
@@ -57,11 +58,11 @@ const About = () => {
     const getData = (arr, title) => arr.find(item => item.title === title);
 
     return (
-        <section className="xl:h-[660px] pb-12 xl:py-24">
+        <section className="xl:h-[860px] pb-12 xl:py-24">
             <div className="container mx-auto">
                 <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">About me</h2>
 
-                <Tabs defaultValue="personal" className="flex flex-col xl:flex-row gap-12">
+                <Tabs defaultValue="qualifications" className="flex flex-col xl:flex-row gap-12">
                     {/* Tabs List */}
                     <TabsList className="flex xl:flex-col gap-4 xl:w-[240px] xl:sticky xl:top-36 xl:self-start">
                         <TabsTrigger className="w-full xl:w-auto" value="personal">Personal Info</TabsTrigger>
@@ -110,6 +111,7 @@ const About = () => {
                                                     <div>
                                                         <div className="font-semibold text-xl leading-none mb-2">{item.company}</div>
                                                         <div className="text-lg leading-none text-muted-foreground mb-4">{item.role}</div>
+                                                        <div className="text-sm leading-none text-muted-foreground mb-4">{item.skills}</div>
                                                         <div className="text-base font-medium">{item.years}</div>
                                                     </div>
                                                 </div>
