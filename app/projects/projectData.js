@@ -66,7 +66,7 @@ Built with:
     },
     {
         slug: 'crc32-checksum-c',
-        image: ['/work/2.png'],
+        image: ['/work/crc32-checksum-c/1.png'],
         category: 'Others',
         name: 'CRC32 (Language : C)',
         description: 'Optimized CRC32 checksum algorithm written in C.',
