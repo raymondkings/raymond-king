@@ -101,12 +101,17 @@ export const projectData = [
             '/work/triptracker-ios/1.png',
             '/work/triptracker-ios/2.png',
             '/work/triptracker-ios/3.png',
-            '/work/triptracker-ios/4.png'
+            '/work/triptracker-ios/4.png',
+            '/work/triptracker-ios/5.png',
+            '/work/triptracker-ios/6.png',
+            '/work/triptracker-ios/7.png',
+            '/work/triptracker-ios/8.png',
         ],
         category: 'Front End',
         name: 'TripTracker',
         description: 'iOS app for trip planning, built using SwiftUI.',
-        longDescription: 'Trip planning app for iOS. Built using: SwiftUI. Lets users plan trips and activities.',
+        longDescription: 'Trip planning app for iOS. Built using: SwiftUI. Lets users plan trips and activities. ' +
+            'Key features : Integrated trip visualization in Apple Maps, AI Trip Planner, Export and Import trips in JSON Format',
         link: '',
         github: '',
         skills: ['SwiftUI', 'iOS', 'Mobile App', 'Front End']
