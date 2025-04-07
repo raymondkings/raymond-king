@@ -43,8 +43,7 @@ const Work = () => {
                     spaceBetween={30} 
                     modules={[Pagination]} 
                     pagination={{clickable: true}}>
-                    {/* show only the first 4 projects for the slides */}
-                    {projectData.slice(0, 4).map((project,index) => {
+                    {projectData.map((project,index) => {
                         return <SwiperSlide key={index}>
                             <ProjectCard project={project}/>
                         </SwiperSlide>
