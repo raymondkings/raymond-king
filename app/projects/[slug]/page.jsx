@@ -106,6 +106,16 @@ export default function ProjectDetail({ params }) {
                 <div className="prose dark:prose-invert">
                     <p>{project.longDescription}</p>
                 </div>
+                {project.slug === 'triptracker-ios' && (
+                    <a
+                        href='https://apps.apple.com/de/app/triptracker-track-your-trips/id6744360523?l=en-GB'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='text-primary underline mt-2 block'
+                    >
+                        View on App Store
+                    </a>
+                )}
             </div>
         </section>
     );

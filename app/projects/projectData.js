@@ -35,15 +35,26 @@ export const projectData = [
         skills: ['React.js', 'PostgreSQL', 'CSS', 'JavaScript']
     },
     {
-        slug: 'car-rental-site',
-        image: ['/work/car-rental-site/1.png', '/work/car-rental-site/2.png'],
+        slug: 'triptracker-ios',
+        image: [
+            '/work/triptracker-ios/1.png',
+            '/work/triptracker-ios/2.png',
+            '/work/triptracker-ios/3.png',
+            '/work/triptracker-ios/4.png',
+            '/work/triptracker-ios/5.png',
+            '/work/triptracker-ios/6.png',
+            '/work/triptracker-ios/7.png',
+            '/work/triptracker-ios/8.png',
+            '/work/triptracker-ios/9.png',
+        ],
         category: 'Front End',
-        name: 'Car Rental Website',
-        description: 'Responsive landing page for a car rental service in Semarang.',
-        longDescription: 'Landing page for a car rental service in Semarang, Indonesia. Built with: HTML, CSS, JavaScript. Focus on responsive layout and visual appeal.',
-        link: 'https://rnbtrans.netlify.app',
-        github: 'https://github.com/raymondkings/RnB_Trans',
-        skills: ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'Front End']
+        name: 'TripTracker',
+        description: 'Released on the App Store! iOS app for trip planning, built using SwiftUI.',
+        longDescription: 'Trip planning app for iOS. Built using: SwiftUI. Lets users plan trips and activities. ' +
+            'Key features : Integrated trip visualization in Apple Maps, AI Trip Planner, Export and Import trips in JSON Format',
+        link: '',
+        github: '',
+        skills: ['SwiftUI', 'iOS', 'Mobile App', 'Front End', 'Released on the App Store']
     },
     {
         slug: 'mori-money-manager',
@@ -61,6 +72,17 @@ export const projectData = [
         link: '',
         github: '',
         skills: ['Flutter', 'Firebase' ,'Mobile App', 'Dart']
+    },
+    {
+        slug: 'car-rental-site',
+        image: ['/work/car-rental-site/1.png', '/work/car-rental-site/2.png'],
+        category: 'Front End',
+        name: 'Car Rental Website',
+        description: 'Responsive landing page for a car rental service in Semarang.',
+        longDescription: 'Landing page for a car rental service in Semarang, Indonesia. Built with: HTML, CSS, JavaScript. Focus on responsive layout and visual appeal.',
+        link: 'https://rnbtrans.netlify.app',
+        github: 'https://github.com/raymondkings/RnB_Trans',
+        skills: ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'Front End']
     },
     {
         slug: 'crc32-checksum-c',
@@ -95,25 +117,4 @@ export const projectData = [
         github: 'https://github.com/raymondkings/LiveInstanceSegmentation',
         skills: ['Python', 'YOLOv8', 'OpenCV', 'Instance Segmentation', 'Computer Vision']
     },
-    {
-        slug: 'triptracker-ios',
-        image: [
-            '/work/triptracker-ios/1.png',
-            '/work/triptracker-ios/2.png',
-            '/work/triptracker-ios/3.png',
-            '/work/triptracker-ios/4.png',
-            '/work/triptracker-ios/5.png',
-            '/work/triptracker-ios/6.png',
-            '/work/triptracker-ios/7.png',
-            '/work/triptracker-ios/8.png',
-        ],
-        category: 'Front End',
-        name: 'TripTracker',
-        description: 'iOS app for trip planning, built using SwiftUI.',
-        longDescription: 'Trip planning app for iOS. Built using: SwiftUI. Lets users plan trips and activities. ' +
-            'Key features : Integrated trip visualization in Apple Maps, AI Trip Planner, Export and Import trips in JSON Format',
-        link: '',
-        github: '',
-        skills: ['SwiftUI', 'iOS', 'Mobile App', 'Front End']
-    }
 ];
