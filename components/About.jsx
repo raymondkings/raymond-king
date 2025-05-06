@@ -9,7 +9,7 @@ const infoData = [
     { icon: <User2 size={20} />, text: 'Raymond King' },
     { icon: <MailIcon size={20} />, text: 'raymond08.de@gmail.com' },
     { icon: <Calendar size={20} />, text: 'Born on 5 Mar, 2002' },
-    { icon: <GraduationCap size={20} />, text: 'CS B.Sc, 4th Semester @TUM' },
+    { icon: <GraduationCap size={20} />, text: 'CS B.Sc @TUM' },
     { icon: <HomeIcon size={20} />, text: 'Schwabing, Munich' },
 ];
 
