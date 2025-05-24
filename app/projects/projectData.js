@@ -19,20 +19,34 @@ export const projectData = [
         skills: ['Next.js', 'Supabase', 'Google Sheets', 'QR Code', 'Google Calendar']
     },
     {
-        slug: 'todo-list-app',
+        slug: 'pelican-predict',
         image: [
-            '/work/todo-list-app/1.png',
-            '/work/todo-list-app/2.png',
-            '/work/todo-list-app/3.png',
-            '/work/todo-list-app/4.png'
+            '/work/pelican-predict/1.png',
+            '/work/pelican-predict/2.png',
+            '/work/pelican-predict/3.png',
+            '/work/pelican-predict/4.png',
         ],
         category: 'Full Stack',
-        name: 'Web based Todo List App',
-        description: 'Simple and functional full-stack todo list app with CRUD support.',
-        longDescription: 'A full-stack todo list app built using: React.js for frontend, PostgreSQL for storing todos. Features basic CRUD and filtering.',
+        name: 'Pelican Predict',
+        description: 'AI-powered stock analysis web app with real-time data, LLM-generated insights, and sleek visualizations.',
+        longDescription: 'Pelican Predict is an intelligent stock analysis web application developed during Makeathon 2025, hosted by TUM.ai. It empowers users with AI-enhanced stock analysis by combining real-time data, LLM-generated insights, and interactive visualizations.' +
+            '' +
+            'Key features include:' +
+            '- Real-time price charts, moving averages, and technical indicators' +
+            '- AI-powered stock predictions and LLM-generated reasoning' +
+            '- Fundamental analysis with financial statements, ratios, and metrics' +
+            '- Real-time financial news integration with AI-driven correlations' +
+            '' +
+            'Built with a modern tech stack:' +
+            '- Frontend: React + TypeScript' +
+            '- Backend: Python + FastAPI' +
+            '- Database: MongoDB' +
+            '- AI: OpenAI LLMs for reasoning, prediction, and analysis' +
+            '' +
+            'Pelican Predict currently supports AAPL, NVDA, and TSLA, providing users with actionable insights and educational tools for stock analysis. Note: This app is for informational purposes only and does not constitute financial advice.',
         link: '',
-        github: 'https://github.com/raymondkings/new-todolist-app/',
-        skills: ['React.js', 'PostgreSQL', 'CSS', 'JavaScript']
+        github: '',
+        skills: ['React', 'TypeScript', 'FastAPI', 'MongoDB']
     },
     {
         slug: 'triptracker-ios',
@@ -116,5 +130,21 @@ export const projectData = [
         link: '',
         github: 'https://github.com/raymondkings/LiveInstanceSegmentation',
         skills: ['Python', 'YOLOv8', 'OpenCV', 'Instance Segmentation', 'Computer Vision']
+    },
+    {
+        slug: 'todo-list-app',
+        image: [
+            '/work/todo-list-app/1.png',
+            '/work/todo-list-app/2.png',
+            '/work/todo-list-app/3.png',
+            '/work/todo-list-app/4.png'
+        ],
+        category: 'Full Stack',
+        name: 'Web based Todo List App',
+        description: 'Simple and functional full-stack todo list app with CRUD support.',
+        longDescription: 'A full-stack todo list app built using: React.js for frontend, PostgreSQL for storing todos. Features basic CRUD and filtering.',
+        link: '',
+        github: 'https://github.com/raymondkings/new-todolist-app/',
+        skills: ['React.js', 'PostgreSQL', 'CSS', 'JavaScript']
     },
 ];
