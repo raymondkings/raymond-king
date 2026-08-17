@@ -11,7 +11,8 @@ const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Raymond King Setia | Portfolio",
-  description: "Raymond 2024",
+  description:
+    "Portfolio of Raymond King Setia, Robotics, Cognition and Intelligence M.Sc. student at TUM. Robotics, AI and software engineering projects, experience and skills.",
 };
 
 export default function RootLayout({ children }) {

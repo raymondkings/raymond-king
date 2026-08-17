@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const icons = [
   {
-    path: 'https://www.linkedin.com/in/raymond-king-setia-23680425b/',
+    path: 'https://www.linkedin.com/in/raymondkingsetia',
     name: <RiLinkedinFill/>
   },
   {
